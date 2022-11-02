@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    width: 28vw;
+    height: 58vh;
+    border-radius: 20px;
+    background-color: hsl(216, 12%, 8%);
+    /* margin: auto; */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.text-container {
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 24vw;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: hsl(216, 12%, 54%);
+}
+
+.ratings{
+    background-color: hsl(213, 19%, 18%);
+    border: 1px;
+    color: hsl(217, 12%, 63%);
+    border-radius: 22px; /* one half of ( (border * 2) + height + padding ) */
+    height: 34px;
+    min-width: 32px;
+    text-align: center;
+    padding: 6px 3px 0px 3px;
+    align-items: center;
+}
+
+.header-icon{
+    background-color: hsl(213, 19%, 18%);
+    border: 1px;
+    color: hsl(217, 12%, 63%);
+    border-radius: 17px; /* one half of ( (border * 2) + height + padding ) */
+    height: 30px;
+    width: 28px;
+    text-align: center;
+    padding: 6px 3px 0px 3px;
+}
+
+div .header-icon{
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 40px;
+    width: 325px;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
+        height: 70vh;
+    }
+    .text-container {
+        width: 75vw;
+    }
+    .button{
+        max-width: 290px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 780px) {
+    .container{
+        width: 70vw;
+        height: 55vh;
+    }
+    .text-container {
+        width: 45vw;
+    }
+}
+
