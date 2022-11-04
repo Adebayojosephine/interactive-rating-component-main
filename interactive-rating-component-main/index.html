@@ -5,45 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <!-- Rating state start -->
 
- <div class="container">
-  <div class="text-container">
-    <div class="header-icon">
-      <img src="./images/icon-star.svg" alt="a star icon">
-    </div>
-    <h1 class="header-text">How did we do?</h1> 
-    <p class="para-text">Please let us know how we did with your support request. All feedback is appreciated 
+  <div class="container">
+    <div class="text-container">
+      <div class="header-icon">
+        <img src="./images/icon-star.svg" alt="a star icon">
+      </div>
+      <h1 class="header-text">How did we do?</h1> 
+      <p class="para-text">Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
-    <div class="rating-container">
-      <div class="ratings" id="rating-1" >
-        1
+      <div class="rating-container">
+        <div class="button-container">
+          <button type="button" class="ratings" id="1" >
+            1
+          </button>
+        </div>
+        <div class="button-container">
+          <button type="button" class="ratings" id="2">
+            2
+          </button>
+        </div>
+        <div class="button-container">
+          <button type="button" class="ratings" id="3">
+            3
+          </button>
+        </div>
+        <div class="button-container">
+          <button type="button" class="ratings" id="4">
+            4
+          </button>
+        </div>
+        <div class="button-container">
+          <button type="button" class="ratings" id="5">
+            5
+          </button>
+        </div>
       </div>
-      <div class="ratings" id="rating-2">
-        2
-      </div>
-      <div class="ratings" id="rating-3">
-        3
-      </div>
-      <div class="ratings" id="rating-4">
-        4
-      </div>
-      <div class="ratings" id="rating-5">
-        5
-      </div>
+      <button type="submit" class="button">SUBMIT</button>
+    
     </div>
-  
-    <button type="submit" class="button">SUBMIT</button>
-  
     <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="thanks">
+      <div class="image-container">
+        <img src="./images/illustration-thank-you.svg" alt="Thank You!">
+      </div>
+      <p class="rating-no">You selected <span id="rating-no"> </span> out of 5</p>
+      <h1 class="thanks-header-text">Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </div>
   
     <!-- Thank you state start -->
   
@@ -55,9 +75,7 @@
   
   
     <!-- Thank you state end -->
-  </div>
-
- </div>
-  </div>
+  
 </body>
+<script src="./index.js"></script>
 </html>
